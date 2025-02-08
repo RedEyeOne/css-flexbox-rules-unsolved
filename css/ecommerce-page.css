@@ -37,9 +37,14 @@ section {
 }
 
 .header-content {
+	display: flex;
+	flex-flow: row nowrap;
+	width: 100%;
 }
 
 .logo-search {
+	display: flex;
+	gap: 30px;
 }
 
 .logo {
@@ -50,10 +55,13 @@ section {
 }
 
 .search-bar {
+	display: flex;
 	width: 400px;
 	background: #1f1f27;
 	padding: 10px 20px;
 	border-radius: 20px;
+	justify-content: center;
+	align-items: center;
 }
 
 .search-bar input {
@@ -64,15 +72,20 @@ section {
 	color: #8d8ba5;
 	font-size: 16px;
 	padding: 4px 0;
+	width: 100%;
 }
 
 .search-bar i {
 	color: #8d8ba5;
 }
 
-.options {
+.header-content .options {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
 }
-
 .option {
 	min-width: 60px;
 	text-transform: capitalize;
@@ -87,6 +100,10 @@ section {
 .categories {
 	background-color: #2b2d36;
 	padding-top: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
 }
 
 .category {
@@ -111,6 +128,8 @@ section {
 }
 
 .view-options {
+	display: flex;
+	gap: 20px;
 }
 
 i.fa-th-list {
@@ -120,6 +139,8 @@ i.fa-th-list {
 .section-control {
 	padding-bottom: 20px;
 	border-bottom: 1px solid #8d8ba5;
+	display: flex;
+	justify-content: space-between;
 }
 
 .section-control .view-option {
@@ -208,10 +229,9 @@ i.fa-th-list {
 	height: 100%;
 }
 
-/* .grid .product-info {
-	text-align: center;
-	padding: 0 20px 30px;
-} */
+.grid .product-info {
+	height: 15rem;
+}
 
 .grid .product-action {
 	padding-top: 30px;
@@ -222,6 +242,11 @@ i.fa-th-list {
 }
 
 /* LINES-ACTION VIEW */
+.lines {
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+}
 
 .lines .product {
 	padding: 20px;
@@ -257,6 +282,7 @@ i.fa-th-list {
 .lines-action {
 	display: flex;
 	flex-flow: row wrap;
+	gap: 30px;
 }
 
 .lines-action .product {

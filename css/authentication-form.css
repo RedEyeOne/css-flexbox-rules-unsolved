@@ -48,12 +48,13 @@ p {
 }
 .form-group-horizontal-control {
 	justify-content: flex-start;
-	gap: 24%;
+	gap: 20px;
+	width: 100%;
 }
 .form-group-horizontal-control select {
-	width: 158%;
+	width: 100%;
 	height: 2rem;
-	flex-grow: 2;
+	flex-grow: 1;
 	border-radius: 3px;
 	background-color: white;
 }
@@ -62,6 +63,9 @@ p {
 	flex-direction: row;
 	gap: 15px;
 	justify-content: flex-start;
+}
+.form-input-control {
+	width: 100%;
 }
 form {
 	border: 1px solid #a9a9a9;
@@ -123,4 +127,14 @@ input[type="submit"]:hover {
 
 .form select {
 	height: 30px;
+}
+#state {
+	width: 100%;
+}
+#city {
+	width: 100%;
+}
+.form-group-horizontal-control {
+	display: flex;
+	flex-grow: 1;
 }
